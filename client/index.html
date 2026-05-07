@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Physics Practical Learning Platform - Interactive secondary school physics practicals, experiments, and projects.">
+  <title>Physics Practical Learning Platform</title>
+  <!-- Bootstrap 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <!-- AOS -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">Physics<span>Lab</span></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <i class="fas fa-bars text-white"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto align-items-lg-center">
+          <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="modules.html">Modules</a></li>
+          <li class="nav-item"><a class="nav-link" href="experiments.html">Experiments</a></li>
+          <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="quiz.html">Quiz</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+          <span id="auth-links">
+            <!-- Filled by JS -->
+            <li class="nav-item"><a class="nav-link" href="login.html">Login</a></li>
+            <li class="nav-item"><a class="nav-link btn-accent ms-2" href="register.html">Register</a></li>
+          </span>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <header class="hero-section d-flex align-items-center">
+    <div class="container hero-content text-center text-lg-start">
+      <div class="row align-items-center">
+        <div class="col-lg-7" data-aos="fade-right">
+          <h1 class="hero-title">Master Physics Through <span>Practical Discovery</span></h1>
+          <p class="hero-text mt-4">Interactive modules, hands-on experiments, and real-world projects designed for secondary school students. Unlock the laws of the universe.</p>
+          <div class="mt-5">
+            <a href="modules.html" class="btn btn-accent btn-lg me-3">Explore Modules</a>
+            <a href="register.html" class="btn btn-outline-light btn-lg">Get Started</a>
+          </div>
+        </div>
+        <div class="col-lg-5 d-none d-lg-block" data-aos="fade-left">
+          <i class="fas fa-flask" style="font-size: 15rem; color: rgba(255,255,255,0.1);"></i>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- Features Section -->
+  <section class="py-5">
+    <div class="container">
+      <div class="section-heading" data-aos="fade-up">
+        <h2>Why PhysicsLab?</h2>
+        <p class="text-muted">A complete ecosystem for learning, experimenting, and excelling in physics.</p>
+      </div>
+      <div class="row g-4">
+        <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+          <div class="card-custom p-4 text-center">
+            <i class="fas fa-book-open card-icon"></i>
+            <h5>Theory Modules</h5>
+            <p>Structured lessons with clear objectives, diagrams, and summaries.</p>
+          </div>
+        </div>
+        <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+          <div class="card-custom p-4 text-center">
+            <i class="fas fa-microscope card-icon"></i>
+            <h5>Practical Experiments</h5>
+            <p>Step-by-step experiments with apparatus lists and observation tables.</p>
+          </div>
+        </div>
+        <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
+          <div class="card-custom p-4 text-center">
+            <i class="fas fa-brain card-icon"></i>
+            <h5>Interactive Quizzes</h5>
+            <p>Test your knowledge with timed multiple-choice quizzes and instant feedback.</p>
+          </div>
+        </div>
+        <div class="col-md-4" data-aos="fade-up" data-aos-delay="100">
+          <div class="card-custom p-4 text-center">
+            <i class="fas fa-project-diagram card-icon"></i>
+            <h5>Student Projects</h5>
+            <p>Build real physics models and experiments with guided projects.</p>
+          </div>
+        </div>
+        <div class="col-md-4" data-aos="fade-up" data-aos-delay="200">
+          <div class="card-custom p-4 text-center">
+            <i class="fas fa-chart-line card-icon"></i>
+            <h5>Progress Tracking</h5>
+            <p>Monitor your learning journey and quiz performance over time.</p>
+          </div>
+        </div>
+        <div class="col-md-4" data-aos="fade-up" data-aos-delay="300">
+          <div class="card-custom p-4 text-center">
+            <i class="fas fa-chalkboard-teacher card-icon"></i>
+            <h5>Teacher Tools</h5>
+            <p>Upload notes, manage experiments, and track student progress.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Categories Section -->
+  <section class="bg-light py-5">
+    <div class="container">
+      <div class="section-heading" data-aos="fade-up">
+        <h2>Explore Physics Domains</h2>
+      </div>
+      <div class="row g-4">
+        <div class="col-md-4" data-aos="zoom-in">
+          <div class="card-custom p-4">
+            <i class="fas fa-cog fa-3x text-secondary mb-3"></i>
+            <h4>Mechanics</h4>
+            <p>Motion, Forces, Newton's Laws, Friction, Momentum</p>
+            <a href="modules.html#mechanics" class="btn btn-sm btn-outline-accent">Explore</a>
+          </div>
+        </div>
+        <div class="col-md-4" data-aos="zoom-in" data-aos-delay="150">
+          <div class="card-custom p-4">
+            <i class="fas fa-bolt fa-3x text-secondary mb-3"></i>
+            <h4>Electricity & Magnetism</h4>
+            <p>Current, Voltage, Resistance, Circuits</p>
+            <a href="modules.html#electricity" class="btn btn-sm btn-outline-accent">Explore</a>
+          </div>
+        </div>
+        <div class="col-md-4" data-aos="zoom-in" data-aos-delay="300">
+          <div class="card-custom p-4">
+            <i class="fas fa-wave-square fa-3x text-secondary mb-3"></i>
+            <h4>Waves, Light & Sound</h4>
+            <p>Reflection, Refraction, Sound Waves</p>
+            <a href="modules.html#waves" class="btn btn-sm btn-outline-accent">Explore</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section class="py-5">
+    <div class="container">
+      <div class="section-heading" data-aos="fade-up">
+        <h2>What Students & Teachers Say</h2>
+      </div>
+      <div class="row">
+        <div class="col-md-4" data-aos="fade-right">
+          <div class="card-custom p-4">
+            <p class="fst-italic">"PhysicsLab transformed my understanding of mechanics. The experiments are so clear!"</p>
+            <h6 class="mt-3">- Sarah, Form 3 Student</h6>
+          </div>
+        </div>
+        <div class="col-md-4" data-aos="fade-up">
+          <div class="card-custom p-4">
+            <p class="fst-italic">"As a teacher, I can easily assign projects and monitor progress. Highly recommended."</p>
+            <h6 class="mt-3">- Mr. Okello, Physics Teacher</h6>
+          </div>
+        </div>
+        <div class="col-md-4" data-aos="fade-left">
+          <div class="card-custom p-4">
+            <p class="fst-italic">"The interactive quizzes helped me score higher in my exams. Thank you!"</p>
+            <h6 class="mt-3">- Kevin, Form 4 Student</h6>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="py-5 bg-primary text-white text-center">
+    <div class="container">
+      <h2 class="text-white" data-aos="zoom-in">Ready to Explore the World of Physics?</h2>
+      <p class="lead">Join thousands of students and teachers already using PhysicsLab.</p>
+      <a href="register.html" class="btn btn-accent btn-lg mt-3" data-aos="zoom-in-up">Start Free Today</a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4">
+          <h5>PhysicsLab</h5>
+          <p>Empowering secondary school physics education through practical learning.</p>
+        </div>
+        <div class="col-md-4">
+          <h5>Quick Links</h5>
+          <ul class="list-unstyled">
+            <li><a href="modules.html">Modules</a></li>
+            <li><a href="experiments.html">Experiments</a></li>
+            <li><a href="quiz.html">Quiz</a></li>
+          </ul>
+        </div>
+        <div class="col-md-4">
+          <h5>Contact</h5>
+          <p><i class="fas fa-envelope me-2"></i>info@physicslab.edu</p>
+          <p><i class="fas fa-phone me-2"></i>+256 700 123456</p>
+        </div>
+      </div>
+      <hr class="border-gray-700">
+      <p class="text-center mb-0">2026 PhysicsLab. All rights reserved. Group 4.</p>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
