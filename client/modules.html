@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Physics Modules - Mechanics, Electricity & Magnetism, Waves, Light and Sound">
+  <title>Physics Modules | PhysicsLab</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <!-- Navbar (identical to index, using same structure) -->
+  <nav class="navbar navbar-expand-lg fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">Physics<span>Lab</span></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <i class="fas fa-bars text-white"></i>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto align-items-lg-center">
+          <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+          <li class="nav-item"><a class="nav-link active" href="modules.html">Modules</a></li>
+          <li class="nav-item"><a class="nav-link" href="experiments.html">Experiments</a></li>
+          <li class="nav-item"><a class="nav-link" href="projects.html">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="quiz.html">Quiz</a></li>
+          <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+          <span id="auth-links"></span>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Page Header -->
+  <section class="hero-section" style="padding: 4rem 0 3rem;">
+    <div class="container text-center">
+      <h1 class="display-5 text-white">Physics Learning Modules</h1>
+      <p class="lead text-white-50">Deep dive into core physics topics with theory, experiments, and projects.</p>
+    </div>
+  </section>
+
+  <main class="container py-5">
+    <!-- Module 1: Mechanics -->
+    <div id="mechanics" class="mb-5" data-aos="fade-up">
+      <h2 class="mb-3"><i class="fas fa-cog me-2 text-secondary"></i>Module 1: Mechanics</h2>
+      <div class="accordion module-accordion" id="mechanicsAccordion">
+        <!-- Introduction -->
+        <div class="accordion-item">
+          <h2 class="accordion-header"><button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#m1intro">Introduction</button></h2>
+          <div id="m1intro" class="accordion-collapse collapse show" data-bs-parent="#mechanicsAccordion">
+            <div class="accordion-body">
+              <p>Mechanics is the branch of physics that deals with the motion of objects and the forces that affect them. It forms the foundation for understanding the physical world, from the simplest movements to complex engineering systems.</p>
+            </div>
+          </div>
+        </div>
+        <!-- Learning Objectives -->
+        <div class="accordion-item">
+          <h2 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#m1objectives">Learning Objectives</button></h2>
+          <div id="m1objectives" class="accordion-collapse collapse" data-bs-parent="#mechanicsAccordion">
+            <div class="accordion-body">
+              <ul>
+                <li>Define and distinguish between distance, displacement, speed, velocity, and acceleration.</li>
+                <li>Apply Newton's three laws of motion to real-world scenarios.</li>
+                <li>Explain the concept of friction and factors affecting it.</li>
+                <li>Calculate momentum and apply the law of conservation of momentum.</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <!-- Detailed Notes -->
+        <div class="accordion-item">
+          <h2 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#m1notes">Detailed Notes</button></h2>
+          <div id="m1notes" class="accordion-collapse collapse" data-bs-parent="#mechanicsAccordion">
+            <div class="accordion-body">
+              <h5>Motion</h5>
+              <p>Motion is the change in position of an object with respect to time. Scalar quantities (speed, distance) have magnitude only, while vector quantities (velocity, displacement) have both magnitude and direction. Equations of motion for uniform acceleration:</p>
+              <code>v = u + at; s = ut + 0.5at^2; v^2 = u^2 + 2as</code>
+              <hr>
+              <h5>Force</h5>
+              <p>A force is a push or pull that can change an object's state of motion. Measured in newtons (N).</p>
+              <hr>
+              <h5>Newton’s Laws</h5>
+              <ol>
+                <li><strong>First Law (Inertia):</strong> An object remains at rest or in uniform motion unless acted upon by an external force.</li>
+                <li><strong>Second Law:</strong> F = ma (force equals mass times acceleration).</li>
+                <li><strong>Third Law:</strong> For every action, there is an equal and opposite reaction.</li>
+              </ol>
+              <hr>
+              <h5>Friction</h5>
+              <p>Friction opposes relative motion between surfaces. Types: static, kinetic, rolling. Depends on nature of surfaces and normal reaction.</p>
+              <hr>
+              <h5>Momentum</h5>
+              <p>Momentum = mass × velocity (p=mv). In a closed system, total momentum before collision equals total momentum after (conservation).</p>
+              <div class="text-center my-3">
+                <img src="images/placeholder.txt" alt="Diagram placeholder" class="img-fluid" style="max-width:300px;">
+                <p class="text-muted small">Diagram: Force and motion illustration</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Summary -->
+        <div class="accordion-item">
+          <h2 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#m1summary">Summary</button></h2>
+          <div id="m1summary" class="accordion-collapse collapse" data-bs-parent="#mechanicsAccordion">
+            <div class="accordion-body">
+              <p>Mechanics explains everyday motion and interactions. Mastering these concepts is essential for advanced physics and engineering.</p>
+            </div>
+          </div>
+        </div>
+        <!-- Quiz Questions (embedded for quick view) -->
+        <div class="accordion-item">
+          <h2 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#m1quiz">Module Quiz</button></h2>
+          <div id="m1quiz" class="accordion-collapse collapse" data-bs-parent="#mechanicsAccordion">
+            <div class="accordion-body">
+              <p><strong>1.</strong> Which of the following is a vector quantity?</p>
+              <div class="form-check"><input class="form-check-input" type="radio" name="mq1" value="0"> Distance</div>
+              <div class="form-check"><input class="form-check-input" type="radio" name="mq1" value="1"> Speed</div>
+              <div class="form-check"><input class="form-check-input" type="radio" name="mq1" value="2"> Velocity</div>
+              <div class="form-check"><input class="form-check-input" type="radio" name="mq1" value="3"> Time</div>
+              <button class="btn btn-sm btn-primary-theme mt-2" onclick="alert('Answer: Velocity')">Check Hint</button>
+              <hr>
+              <p><strong>2.</strong> Newton's second law is expressed as:</p>
+              <div class="form-check"><input class="form-check-input" type="radio" name="mq2" value="0"> F = mv</div>
+              <div class="form-check"><input class="form-check-input" type="radio" name="mq2" value="1"> F = ma</div>
+              <div class="form-check"><input class="form-check-input" type="radio" name="mq2" value="2"> F = m/v</div>
+              <button class="btn btn-sm btn-primary-theme mt-2" onclick="alert('Answer: F = ma')">Check Hint</button>
+            </div>
+          </div>
+        </div>
+        <!-- Practical Experiment -->
+        <div class="accordion-item">
+          <h2 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#m1experiment">Practical Experiment: Friction on an Inclined Plane</button></h2>
+          <div id="m1experiment" class="accordion-collapse collapse" data-bs-parent="#mechanicsAccordion">
+            <div class="accordion-body">
+              <p><strong>Aim:</strong> To determine the coefficient of static friction between two surfaces.</p>
+              <p><strong>Apparatus:</strong> Wooden plank, block, protractor, meter rule.</p>
+              <p><strong>Procedure:</strong></p>
+              <ol>
+                <li>Place the block on the plank and gradually incline it.</li>
+                <li>Record the angle at which the block just starts to slide.</li>
+                <li>Repeat thrice and average the angle.</li>
+              </ol>
+              <p><strong>Observation Table:</strong></p>
+              <table class="table table-bordered">
+                <tr><th>Trial</th><th>Angle (degrees)</th></tr>
+                <tr><td>1</td><td>30</td></tr>
+                <tr><td>2</td><td>31</td></tr>
+                <tr><td>3</td><td>29</td></tr>
+              </table>
+              <p><strong>Analysis:</strong> The coefficient of static friction = tan(average angle).</p>
+              <p><strong>Conclusion:</strong> The friction coefficient depends on the nature of the surfaces.</p>
+            </div>
+          </div>
+        </div>
+        <!-- Student Project -->
+        <div class="accordion-item">
+          <h2 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#m1project">Student Project: Balloon Rocket Car</button></h2>
+          <div id="m1project" class="accordion-collapse collapse" data-bs-parent="#mechanicsAccordion">
+            <div class="accordion-body">
+              <p><strong>Description:</strong> Build a car powered by a balloon to demonstrate Newton's third law.</p>
+              <p><strong>Materials:</strong> Plastic bottle, straws, balloon, tape, bottle caps.</p>
+              <p><strong>Difficulty:</strong> Beginner</p>
+              <p><strong>Educational Value:</strong> Illustrates action-reaction forces and momentum.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Module 2: Electricity and Magnetism -->
+    <div id="electricity" class="mb-5" data-aos="fade-up">
+      <h2 class="mb-3"><i class="fas fa-bolt me-2 text-secondary"></i>Module 2: Electricity and Magnetism</h2>
+      <div class="accordion module-accordion" id="electricityAccordion">
+        <div class="accordion-item">
+          <h2 class="accordion-header"><button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#m2intro">Introduction</button></h2>
+          <div id="m2intro" class="accordion-collapse collapse show"><div class="accordion-body">Electricity and magnetism are fundamental to modern technology. This module covers electric current, voltage, resistance, and simple circuits.</div></div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="chapter-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#m2objectives">Learning Objectives</button></h2>
+          <div id="m2objectives" class="accordion-collapse collapse"><div class="accordion-body"><ul><li>Define current, voltage, and resistance.</li><li>Apply Ohm’s law.</li><li>Construct and analyze series and parallel circuits.</li><li>Explain basic electromagnetic principles.</li></ul></div></div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#m2notes">Detailed Notes</button></h2>
+          <div id="m2notes" class="accordion-collapse collapse"><div class="accordion-body">
+            <h5>Current (I)</h5><p>Flow of electric charge, measured in amperes (A).</p>
+            <h5>Voltage (V)</h5><p>Electric potential difference, measured in volts.</p>
+            <h5>Resistance (R)</h5><p>Opposition to current, measured in ohms (Ω). Ohm’s law: V = IR.</p>
+            <h5>Circuits</h5><p>Series: single path, current same, voltage divides. Parallel: multiple paths, voltage same, current divides.</p>
+            <div class="text-center"><i class="fas fa-microchip fa-3x text-secondary"></i><p class="small">Circuit symbol illustration</p></div>
+          </div></div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#m2summary">Summary</button></h2>
+          <div id="m2summary" class="accordion-collapse collapse"><div class="accordion-body">Electrical concepts are essential for understanding how devices work. Ohm’s law is the foundation.</div></div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#m2quiz">Module Quiz</button></h2>
+          <div id="m2quiz" class="accordion-collapse collapse"><div class="accordion-body">
+            <p><strong>1.</strong> Unit of resistance:</p>
+            <div class="form-check"><input class="form-check-input" type="radio" name="eq1"> Volt</div>
+            <div class="form-check"><input class="form-check-input" type="radio" name="eq1"> Ampere</div>
+            <div class="form-check"><input class="form-check-input" type="radio" name="eq1"> Ohm</div>
+            <button class="btn btn-sm btn-primary-theme mt-2" onclick="alert('Answer: Ohm')">Hint</button>
+          </div></div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#m2experiment">Practical: Ohm’s Law Verification</button></h2>
+          <div id="m2experiment" class="accordion-collapse collapse"><div class="accordion-body">
+            <p><strong>Aim:</strong> Verify V=IR.</p>
+            <p><strong>Apparatus:</strong> Battery, resistor, ammeter, voltmeter, wires.</p>
+            <p><strong>Procedure:</strong> Set up circuit, vary voltage, record current.</p>
+            <table class="table table-bordered"><tr><th>Voltage (V)</th><th>Current (A)</th></tr><tr><td>2</td><td>0.2</td></tr><tr><td>4</td><td>0.4</td></tr></table>
+            <p><strong>Conclusion:</strong> Current proportional to voltage if resistance constant.</p>
+          </div></div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#m2project">Project: Simple Electromagnet</button></h2>
+          <div id="m2project" class="accordion-collapse collapse"><div class="accordion-body">
+            <p><strong>Description:</strong> Build an electromagnet using a nail and wire.</p>
+            <p><strong>Materials:</strong> Iron nail, insulated copper wire, battery.</p>
+            <p><strong>Difficulty:</strong> Beginner</p>
+          </div></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Module 3: Waves, Light and Sound -->
+    <div id="waves" data-aos="fade-up">
+      <h2 class="mb-3"><i class="fas fa-wave-square me-2 text-secondary"></i>Module 3: Waves, Light and Sound</h2>
+      <div class="accordion module-accordion" id="wavesAccordion">
+        <div class="accordion-item">
+          <h2 class="accordion-header"><button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#m3intro">Introduction</button></h2>
+          <div id="m3intro" class="accordion-collapse collapse show"><div class="accordion-body">Waves transfer energy without transferring matter. Light and sound are wave phenomena with distinct properties.</div></div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#m3objectives">Learning Objectives</button></h2>
+          <div id="m3objectives" class="accordion-collapse collapse"><div class="accordion-body"><ul><li>Explain reflection and refraction.</li><li>Describe sound wave properties.</li><li>Identify wave characteristics (amplitude, frequency).</li></ul></div></div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#m3notes">Detailed Notes</button></h2>
+          <div id="m3notes" class="accordion-collapse collapse"><div class="accordion-body">
+            <h5>Reflection</h5><p>Bouncing of waves when they hit a surface. Law: angle of incidence = angle of reflection.</p>
+            <h5>Refraction</h5><p>Bending of waves when entering a different medium. Snell’s law: n1 sinθ1 = n2 sinθ2.</p>
+            <h5>Sound Waves</h5><p>Longitudinal waves requiring a medium. Speed in air ~340 m/s. Pitch relates to frequency.</p>
+            <div class="text-center"><i class="fas fa-lightbulb fa-3x text-warning"></i><p class="small">Light refraction through prism</p></div>
+          </div></div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#m3summary">Summary</button></h2>
+          <div id="m3summary" class="accordion-collapse collapse"><div class="accordion-body">Wave behavior explains everyday phenomena like echoes and rainbows.</div></div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#m3quiz">Module Quiz</button></h2>
+          <div id="m3quiz" class="accordion-collapse collapse"><div class="accordion-body">
+            <p><strong>1.</strong> Sound travels fastest in:</p>
+            <div class="form-check"><input class="form-check-input" type="radio" name="sq1"> Air</div>
+            <div class="form-check"><input class="form-check-input" type="radio" name="sq1"> Water</div>
+            <div class="form-check"><input class="form-check-input" type="radio" name="sq1"> Steel</div>
+            <button class="btn btn-sm btn-primary-theme mt-2" onclick="alert('Answer: Steel')">Hint</button>
+          </div></div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#m3experiment">Practical: Reflection using Plane Mirror</button></h2>
+          <div id="m3experiment" class="accordion-collapse collapse"><div class="accordion-body">
+            <p><strong>Aim:</strong> Verify law of reflection.</p>
+            <p><strong>Apparatus:</strong> Plane mirror, pins, protractor, drawing board.</p>
+            <p><strong>Procedure:</strong> Place mirror on paper, mark incident and reflected rays, measure angles.</p>
+            <p><strong>Observation:</strong> Angle i = Angle r within limits.</p>
+          </div></div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#m3project">Project: Pinhole Camera</button></h2>
+          <div id="m3project" class="accordion-collapse collapse"><div class="accordion-body">
+            <p><strong>Description:</strong> Build a pinhole camera to demonstrate light traveling in straight lines.</p>
+            <p><strong>Materials:</strong> Cardboard box, black paper, tracing paper, pin.</p>
+            <p><strong>Difficulty:</strong> Intermediate</p>
+          </div></div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="row">
+        <div class="col-md-4"><h5>PhysicsLab</h5><p>Empowering physics education.</p></div>
+        <div class="col-md-4"><h5>Quick Links</h5><ul class="list-unstyled"><li><a href="index.html">Home</a></li><li><a href="experiments.html">Experiments</a></li></ul></div>
+        <div class="col-md-4"><h5>Contact</h5><p>info@physicslab.edu</p></div>
+      </div>
+      <hr class="border-gray-700"><p class="text-center mb-0">2026 PhysicsLab. Group 4.</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
