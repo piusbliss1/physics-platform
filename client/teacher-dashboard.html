@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Teacher Dashboard | PhysicsLab</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg fixed-top">
+    <div class="container"><a class="navbar-brand" href="index.html">Physics<span>Lab</span></a><span id="auth-links"></span></div>
+  </nav>
+  <section class="hero-section" style="padding: 4rem 0 2rem;">
+    <div class="container"><h1 class="text-white">Teacher Dashboard</h1></div>
+  </section>
+  <main class="container py-4">
+    <div class="row g-4">
+      <div class="col-md-3"><div class="dash-stat"><i class="fas fa-users"></i><h4>120</h4><p>Students</p></div></div>
+      <div class="col-md-3"><div class="dash-stat"><i class="fas fa-book"></i><h4>3</h4><p>Modules</p></div></div>
+      <div class="col-md-3"><div class="dash-stat"><i class="fas fa-flask"></i><h4>8</h4><p>Experiments</p></div></div>
+      <div class="col-md-3"><div class="dash-stat"><i class="fas fa-project-diagram"></i><h4>6</h4><p>Projects</p></div></div>
+    </div>
+    <div class="card-custom p-4 mt-5">
+      <h5>Quick Actions</h5>
+      <button class="btn btn-primary-theme me-2" data-bs-toggle="modal" data-bs-target="#addModuleModal">Add Module</button>
+      <button class="btn btn-outline-accent">Upload Notes</button>
+    </div>
+    <!-- Simple modal for adding module (frontend demo) -->
+    <div class="modal fade" id="addModuleModal" tabindex="-1">
+      <div class="modal-dialog"><div class="modal-content"><div class="modal-header"><h5>Add New Module</h5><button class="btn-close" data-bs-dismiss="modal"></button></div><div class="modal-body"><form><div class="mb-3"><label>Title</label><input class="form-control"></div><button class="btn btn-primary-theme">Save</button></form></div></div></div>
+    </div>
+  </main>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/main.js"></script>
+  <script>
+    if (!isAuthenticated()) window.location.href = 'login.html';
+    updateNav();
+  </script>
+</body>
+</html>
